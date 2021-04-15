@@ -1944,6 +1944,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 367257183023715193, guid: 6209c40f41a64f947a4da97ef6e6e4f1, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 642400481125256173, guid: 6209c40f41a64f947a4da97ef6e6e4f1, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.72
@@ -1959,6 +1963,14 @@ PrefabInstance:
     - target: {fileID: 642400481125256173, guid: 6209c40f41a64f947a4da97ef6e6e4f1, type: 3}
       propertyPath: m_LocalPosition.z
       value: 1.121
+      objectReference: {fileID: 0}
+    - target: {fileID: 1001856244083914141, guid: 6209c40f41a64f947a4da97ef6e6e4f1, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1001856244083914141, guid: 6209c40f41a64f947a4da97ef6e6e4f1, type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1910548831366790711, guid: 6209c40f41a64f947a4da97ef6e6e4f1, type: 3}
       propertyPath: m_RootOrder
@@ -2040,7 +2052,9 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 678752714}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 367257183023715193, guid: 6209c40f41a64f947a4da97ef6e6e4f1, type: 3}
+    - {fileID: 1001856244083914141, guid: 6209c40f41a64f947a4da97ef6e6e4f1, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6209c40f41a64f947a4da97ef6e6e4f1, type: 3}
 --- !u!1001 &6015129080699455200
 PrefabInstance:
