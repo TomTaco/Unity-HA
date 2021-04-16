@@ -5,6 +5,7 @@ using UnityEngine;
 public class exitLevel : MonoBehaviour
 {
     public AudioClip exitSound;
+    public GameObject flagge;
 
     private bool wasTouched = false;
     private bool isEnabled= false;
@@ -14,7 +15,7 @@ public class exitLevel : MonoBehaviour
         if(!wasTouched && other.CompareTag("Player"))
         {
             isEnabled = true;
-            //AudioSource.PlayClipAtPoint(levelExitSound, Camera.main.transform.position);
+            AudioSource.PlayClipAtPoint(exitSound, Camera.main.transform.position);
             wasTouched = true;
         }
     }
@@ -23,7 +24,8 @@ public class exitLevel : MonoBehaviour
     {
         if (isEnabled)
         {
-            transform.Rotate(Vector3.up * 1f, Space.World);
+            if((flagge.transform.position.y - transform.position.y) > - 0.33)
+                flagge.transform.Translate(Vector3.down * 1.7f * Time.deltaTime);
         }
     }
 }
