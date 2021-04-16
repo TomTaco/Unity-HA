@@ -811,6 +811,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8142645551246750040, guid: 759e023a9247e404c92edda156f26ddb, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 01c1057881543cf45bbe31d6e0927ee5, type: 2}
+    - target: {fileID: 8142645551246750041, guid: 759e023a9247e404c92edda156f26ddb, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: fa2ce99c4340d454a8b17c6b433b4a89, type: 2}
     - target: {fileID: 8142645551246750043, guid: 759e023a9247e404c92edda156f26ddb, type: 3}
       propertyPath: m_Name
       value: Player
@@ -1904,7 +1912,7 @@ Transform:
   - {fileID: 1286482777}
   - {fileID: 1339202982}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1935714391
 GameObject:
@@ -2365,7 +2373,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 256280281907812084, guid: ad8829eb8ceb06144bc2ce3d26f0b461, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 256280281907812084, guid: ad8829eb8ceb06144bc2ce3d26f0b461, type: 3}
       propertyPath: m_LocalPosition.x
