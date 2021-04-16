@@ -31,4 +31,9 @@ public class PointCollector : MonoBehaviour
             allPointsText.text = "YOU GOT ALL POINTS!";
         }
     }
+
+    public int  getCount()
+    {
+        return this.count;
+    }
 }

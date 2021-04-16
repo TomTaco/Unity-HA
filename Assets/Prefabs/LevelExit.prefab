@@ -2443,7 +2443,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 453f704c54857f94d9d06b695f940cee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  exitSound: {fileID: 0}
+  exitSound: {fileID: 8300000, guid: d19a133551ba31442ad2179569fdce63, type: 3}
   flagge: {fileID: 7408995122234141165}
 --- !u!114 &1853684620
 MonoBehaviour:

@@ -477,10 +477,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1382601525}
     m_Modifications:
-    - target: {fileID: -3491349129357082951, guid: 5486b6b33f71fdf46a52227011381b94, type: 3}
-      propertyPath: m_DrawHalo
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6015129082237611605, guid: 5486b6b33f71fdf46a52227011381b94, type: 3}
       propertyPath: m_Name
       value: Point (3)
