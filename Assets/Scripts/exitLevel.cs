@@ -15,7 +15,7 @@ public class exitLevel : MonoBehaviour
         if(!wasTouched && other.CompareTag("Player") && (other.GetComponent<PointCollector>().getCount() >= 11))
         {
             isEnabled = true;
-            AudioSource.PlayClipAtPoint(exitSound, Camera.main.transform.position);
+            AudioSource.PlayClipAtPoint(exitSound, other.transform.position);
             wasTouched = true;
         }
     }

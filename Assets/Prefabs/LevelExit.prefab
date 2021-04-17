@@ -2334,7 +2334,7 @@ GameObject:
   - component: {fileID: 6698539350362950322}
   - component: {fileID: 1853684619}
   - component: {fileID: 1853684618}
-  - component: {fileID: 1853684620}
+  - component: {fileID: 7933116831352699617}
   m_Layer: 0
   m_Name: Stange
   m_TagString: Untagged
@@ -2383,7 +2383,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1fec69b00977577408d75e9f0dcbf322, type: 2}
+  - {fileID: 2100000, guid: 6fdc4f07f3746fd48986983d51cbed52, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2445,7 +2445,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   exitSound: {fileID: 8300000, guid: d19a133551ba31442ad2179569fdce63, type: 3}
   flagge: {fileID: 7408995122234141165}
---- !u!114 &1853684620
+--- !u!114 &7933116831352699617
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2457,7 +2457,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 727c6a2aeb4893b45835206323893df5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelId: 1
+  levelId: 0
 --- !u!1 &6701967956894320039
 GameObject:
   m_ObjectHideFlags: 0
@@ -3008,6 +3008,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5371137570335181993}
+  - component: {fileID: 352986875}
   m_Layer: 0
   m_Name: Fahne
   m_TagString: Untagged
@@ -3040,6 +3041,25 @@ Transform:
   m_Father: {fileID: 256280281907812084}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &352986875
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7408995122234141165}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &7539857550255254287
 GameObject:
   m_ObjectHideFlags: 0
