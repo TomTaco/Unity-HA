@@ -12,6 +12,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] AudioClip pickUpClip;
     [SerializeField] AudioClip bladeHitClip;
     private Vector3 originalPos;
+    public GameEvent playerDeathEvent;
+    public GameEvent levelEndEvent;
+    private bool alive = true;
 
     void Start(){
         score = 0;
@@ -28,7 +31,8 @@ public class PlayerController : MonoBehaviour
         }
         if(other.gameObject.CompareTag("Blade")){
             AudioSource.PlayClipAtPoint(bladeHitClip, other.transform.position);
-            resetLevel();
+            //resetLevel();
+            killPlayer();
         }
     }
 
@@ -52,4 +56,29 @@ public class PlayerController : MonoBehaviour
     {
         return this.score;
     }
+
+    public void pointCheck()
+    {
+        if (score == 11)
+        {
+            levelEndEvent.Raise();
+        }
+    }
+
+    public void explodePlayer()
+    {
+        ParticleSystem exp = GetComponent<ParticleSystem>();
+        exp.Play();
+        gameObject.GetComponent<Renderer>().material.SetColor("_Color", Color.black);
+    }
+
+    private void killPlayer()
+    {
+        if (alive)
+        {
+            playerDeathEvent.Raise();
+            alive = false;
+        }
+    }
+
 }

@@ -10,6 +10,7 @@ public class PointCollector : MonoBehaviour
     public Text allPointsText;
     [SerializeField] AudioClip triggerClip;
 
+
     void Start(){
         count = 0;
         setScoreText();
@@ -32,8 +33,9 @@ public class PointCollector : MonoBehaviour
         }
     }
 
-    public int  getCount()
+    public int getCount()
     {
         return this.count;
     }
+
 }
