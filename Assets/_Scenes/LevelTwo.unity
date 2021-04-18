@@ -2016,10 +2016,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelId: 1
   exitSound: {fileID: 8300000, guid: d19a133551ba31442ad2179569fdce63, type: 3}
+  levelStartSound: {fileID: 8300000, guid: ee3dcbbd5983a7647ade35b2fc78b810, type: 3}
   player: {fileID: 1926944372}
   maxLevelId: 2
   scoreText: {fileID: 781608740}
   allPointsText: {fileID: 781608739}
+  bonkAmountText: {fileID: 0}
   levelEndEvent: {fileID: 11400000, guid: bc438a155267b304bbb34e31cd28eb73, type: 2}
 --- !u!4 &1705061062
 Transform:
@@ -2497,6 +2499,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 793041496, guid: 759e023a9247e404c92edda156f26ddb, type: 3}
+      propertyPath: bonkSound
+      value: 
+      objectReference: {fileID: 8300000, guid: f6b8820b32d109c4b953c39b97e5a148, type: 3}
+    - target: {fileID: 793041496, guid: 759e023a9247e404c92edda156f26ddb, type: 3}
       propertyPath: explosion
       value: 
       objectReference: {fileID: 0}
@@ -2563,6 +2569,10 @@ PrefabInstance:
     - target: {fileID: 8142645551246750022, guid: 759e023a9247e404c92edda156f26ddb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8142645551246750042, guid: 759e023a9247e404c92edda156f26ddb, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8142645551246750043, guid: 759e023a9247e404c92edda156f26ddb, type: 3}
       propertyPath: m_Name
