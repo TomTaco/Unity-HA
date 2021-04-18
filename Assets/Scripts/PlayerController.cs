@@ -6,6 +6,47 @@ using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
+    [SerializeField] AudioClip pickUpClip;
+    [SerializeField] AudioClip bladeHitClip;
+    public GameEvent playerDeathEvent;
+    public GameEvent levelEndEvent;
+    public GameEvent PointCollectEvent;
+    private bool alive = true;
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Point"))
+        {
+            AudioSource.PlayClipAtPoint(pickUpClip, other.transform.position);
+            other.gameObject.SetActive(false);
+            PointCollectEvent.Raise();
+        }
+        if (other.gameObject.CompareTag("Blade"))
+        {
+            AudioSource.PlayClipAtPoint(bladeHitClip, other.transform.position);
+            killPlayer();
+        }
+    }
+
+    public void explodePlayer()
+    {
+        ParticleSystem exp = GetComponent<ParticleSystem>();
+        exp.Play();
+        gameObject.GetComponent<Renderer>().material.SetColor("_Color", Color.black);
+    }
+
+    private void killPlayer()
+    {
+        if (alive)
+        {
+            playerDeathEvent.Raise();
+            alive = false;
+        }
+    }
+
+
+
+    /*
     private int score;
     public Text scoreText;
     public Text allPointsText;
@@ -79,6 +120,6 @@ public class PlayerController : MonoBehaviour
             playerDeathEvent.Raise();
             alive = false;
         }
-    }
+    }*/
 
 }

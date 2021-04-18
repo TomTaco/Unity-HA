@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class changeLevel : MonoBehaviour
 {
+    /*
     [SerializeField]
     private int levelId = 0;
 
@@ -21,5 +22,5 @@ public class changeLevel : MonoBehaviour
     {
         yield return new WaitForSeconds(2);
         SceneManager.LoadScene(levelId);
-    }
+    }*/
 }

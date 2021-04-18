@@ -451,6 +451,7 @@ GameObject:
   - component: {fileID: 67282537}
   - component: {fileID: 67282535}
   - component: {fileID: 67282536}
+  - component: {fileID: 67282540}
   - component: {fileID: 67282539}
   - component: {fileID: 67282538}
   m_Layer: 0
@@ -476,6 +477,9 @@ MonoBehaviour:
   exitSound: {fileID: 8300000, guid: d19a133551ba31442ad2179569fdce63, type: 3}
   player: {fileID: 793041489}
   maxLevelId: 2
+  scoreText: {fileID: 1297579532}
+  allPointsText: {fileID: 1939182387}
+  levelEndEvent: {fileID: 11400000, guid: bc438a155267b304bbb34e31cd28eb73, type: 2}
 --- !u!114 &67282536
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -546,9 +550,9 @@ MonoBehaviour:
   Response:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 793041491}
-        m_TargetAssemblyTypeName: Movement, Assembly-CSharp
-        m_MethodName: disableMovement
+      - m_Target: {fileID: 67282535}
+        m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
+        m_MethodName: playlevelExitSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -560,7 +564,19 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 67282535}
         m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
-        m_MethodName: playlevelExitSound
+        m_MethodName: stopPlayer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 67282535}
+        m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
+        m_MethodName: updateAllPointsText
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -598,9 +614,49 @@ MonoBehaviour:
   Response:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 793041490}
-        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+      - m_Target: {fileID: 67282535}
+        m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
         m_MethodName: pointCheck
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &67282540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67282534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eca8af515c1faaf409afce624c5c66b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: bcd7c649551645e4b921f04a904326fd, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 67282535}
+        m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
+        m_MethodName: updateScore
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 67282535}
+        m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
+        m_MethodName: updateScoreText
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5880,6 +5936,10 @@ PrefabInstance:
       propertyPath: playerDeathEvent
       value: 
       objectReference: {fileID: 11400000, guid: e14f30e0601ee0b479d3f4a15316834d, type: 2}
+    - target: {fileID: 793041496, guid: 759e023a9247e404c92edda156f26ddb, type: 3}
+      propertyPath: PointCollectEvent
+      value: 
+      objectReference: {fileID: 11400000, guid: bcd7c649551645e4b921f04a904326fd, type: 2}
     - target: {fileID: 8142645551246750022, guid: 759e023a9247e404c92edda156f26ddb, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -7600,8 +7660,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelExit
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 7933116831352699617, guid: ad8829eb8ceb06144bc2ce3d26f0b461, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad8829eb8ceb06144bc2ce3d26f0b461, type: 3}
 --- !u!1001 &3442755622699967583
 PrefabInstance:
@@ -7669,7 +7728,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3023126402970436167, guid: 467e764dacf8cfe429031444981a3fc6, type: 3}
       propertyPath: m_Size.z
-      value: 0.5
+      value: 0.09884581
+      objectReference: {fileID: 0}
+    - target: {fileID: 3664985308501191981, guid: 467e764dacf8cfe429031444981a3fc6, type: 3}
+      propertyPath: m_Size.z
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3716893260418258010, guid: 467e764dacf8cfe429031444981a3fc6, type: 3}
       propertyPath: m_RootOrder
@@ -7715,17 +7778,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -80.828
       objectReference: {fileID: 0}
+    - target: {fileID: 3892950854958487642, guid: 467e764dacf8cfe429031444981a3fc6, type: 3}
+      propertyPath: m_Size.z
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4217722433295878073, guid: 467e764dacf8cfe429031444981a3fc6, type: 3}
       propertyPath: m_Name
       value: Spinner
       objectReference: {fileID: 0}
+    - target: {fileID: 4696245254638913913, guid: 467e764dacf8cfe429031444981a3fc6, type: 3}
+      propertyPath: m_Size.z
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6486454393507456531, guid: 467e764dacf8cfe429031444981a3fc6, type: 3}
       propertyPath: m_Size.z
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6836091991163343716, guid: 467e764dacf8cfe429031444981a3fc6, type: 3}
-      propertyPath: m_Size.z
-      value: 0.5
+      value: 0.09884581
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 467e764dacf8cfe429031444981a3fc6, type: 3}
