@@ -10,25 +10,27 @@ public class LevelManager : MonoBehaviour
     [SerializeField]
     private AudioClip exitSound;
     [SerializeField]
+    private AudioClip levelStartSound;
+    [SerializeField]
     private GameObject player;
     [SerializeField]
     private int maxLevelId = 2;
     private int nextLevelId;
     private int score = 0;
+    private int bonks = 0;
 
     public Text scoreText;
     public Text allPointsText;
+    public Text bonkAmountText;
     public GameEvent levelEndEvent;
 
     private void Start()
     {
         updateScoreText();
+        bonkAmountText.text = "";
         allPointsText.text = "";
+        //AudioSource.PlayClipAtPoint(levelStartSound, player.transform.position);
     }
-    /*void Awake()
-    {
-        DontDestroyOnLoad(transform.gameObject);
-    }*/
 
     public void ReloadLevel()
     {
@@ -73,6 +75,18 @@ public class LevelManager : MonoBehaviour
     public void updateAllPointsText()
     {
         allPointsText.text = "All Points collected!";
+    }
+
+    public void updateBonks()
+    {
+        bonks++;
+    }
+
+    //"Bonk Amount: " + bonks.ToString()
+
+    public void updateBonkAmountText()
+    {
+        bonkAmountText.text = "Bonk Amount: " + bonks.ToString();
     }
 
     public void pointCheck()

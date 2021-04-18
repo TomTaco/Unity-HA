@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] AudioClip pickUpClip;
     [SerializeField] AudioClip bladeHitClip;
+    [SerializeField] private AudioClip bonkSound;
     public GameEvent playerDeathEvent;
     public GameEvent levelEndEvent;
     public GameEvent PointCollectEvent;
@@ -42,6 +43,11 @@ public class PlayerController : MonoBehaviour
             playerDeathEvent.Raise();
             alive = false;
         }
+    }
+
+    public void playBonkSound()
+    {
+        AudioSource.PlayClipAtPoint(bonkSound, transform.position);
     }
 
 
