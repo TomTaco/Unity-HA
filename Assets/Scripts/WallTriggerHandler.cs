@@ -7,6 +7,9 @@ public class WallTriggerHandler : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        wallHitEvent.Raise();
+        if(other.CompareTag("Player"))
+        {
+            wallHitEvent.Raise();
+        }
     }
 }
