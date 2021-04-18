@@ -59,13 +59,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2260683685604139662}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 0.798, z: -0.423}
+  m_LocalRotation: {x: 0, y: -0.17364825, z: 0, w: 0.9848078}
+  m_LocalPosition: {x: 0.124, y: 0.798, z: -0.369}
   m_LocalScale: {x: 0.01, y: 0.4, z: 0.8}
   m_Children: []
   m_Father: {fileID: 256280281907812084}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -20, z: 0}
 --- !u!33 &5112391628579596187
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -106,7 +106,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: de28d9971d6867b4d90c82b02cdcb6f7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -147,13 +147,13 @@ Cloth:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2260683685604139662}
   m_Enabled: 1
-  m_StretchingStiffness: 1
-  m_BendingStiffness: 0
+  m_StretchingStiffness: 0.8
+  m_BendingStiffness: 1
   m_UseTethers: 1
   m_UseGravity: 1
   m_Damping: 0
-  m_ExternalAcceleration: {x: 0, y: 0, z: 0}
-  m_RandomAcceleration: {x: 0, y: 0, z: 0}
+  m_ExternalAcceleration: {x: 2.3, y: 0, z: 2}
+  m_RandomAcceleration: {x: 0.5, y: 0.5, z: 1}
   m_WorldVelocityScale: 0.5
   m_WorldAccelerationScale: 1
   m_Friction: 0.5
@@ -165,13 +165,13 @@ Cloth:
   m_Coefficients:
   - maxDistance: 3.4028235e+38
     collisionSphereDistance: 3.4028235e+38
-  - maxDistance: 3.4028235e+38
+  - maxDistance: 0
     collisionSphereDistance: 3.4028235e+38
   - maxDistance: 3.4028235e+38
     collisionSphereDistance: 3.4028235e+38
-  - maxDistance: 3.4028235e+38
+  - maxDistance: 0
     collisionSphereDistance: 3.4028235e+38
-  - maxDistance: 3.4028235e+38
+  - maxDistance: 0.5
     collisionSphereDistance: 3.4028235e+38
   - maxDistance: 3.4028235e+38
     collisionSphereDistance: 3.4028235e+38
@@ -313,7 +313,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   exitSound: {fileID: 8300000, guid: d19a133551ba31442ad2179569fdce63, type: 3}
-  flagge: {fileID: 0}
+  flagge: {fileID: 2260683685604139662}
 --- !u!114 &7933116831352699617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -326,4 +326,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 727c6a2aeb4893b45835206323893df5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelId: 0
+  levelId: 1

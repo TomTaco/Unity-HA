@@ -12,7 +12,7 @@ public class exitLevel : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(!wasTouched && other.CompareTag("Player") && (other.GetComponent<PointCollector>().getCount() >= 11))
+        if(!wasTouched && other.CompareTag("Player") && (other.GetComponent<PlayerController>().getCount() >= 11))
         {
             isEnabled = true;
             AudioSource.PlayClipAtPoint(exitSound, other.transform.position);

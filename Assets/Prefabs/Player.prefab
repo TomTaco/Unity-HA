@@ -141,4 +141,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreText: {fileID: 0}
   allPointsText: {fileID: 0}
-  triggerClip: {fileID: 8300000, guid: 1b005fc5cff16df4ca110fc564c1684c, type: 3}
+  pickUpClip: {fileID: 8300000, guid: 1b005fc5cff16df4ca110fc564c1684c, type: 3}
+  bladeHitClip: {fileID: 8300000, guid: d3fdbba9518861549a28a13beccf3558, type: 3}

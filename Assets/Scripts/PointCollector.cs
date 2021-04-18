@@ -17,7 +17,7 @@ public class PointCollector : MonoBehaviour
     }
     void OnTriggerEnter(Collider other){
         if(other.gameObject.CompareTag("Point")){
-            AudioSource.PlayClipAtPoint(triggerClip, other.transform.position);
+            AudioSource.PlayClipAtPoint(triggerClip, Camera.main.transform.position);
             Destroy(other.gameObject);
             count++;
             setScoreText();

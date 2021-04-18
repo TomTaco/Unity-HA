@@ -10,7 +10,7 @@ public class changeLevel : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player") && (other.GetComponent<PointCollector>().getCount() >= 11))
+        if (other.CompareTag("Player") && (other.GetComponent<PlayerController>().getCount() >= 11))
         {
             other.gameObject.GetComponent<Movement>().disableMovement();
             StartCoroutine(waitForLevelExit());

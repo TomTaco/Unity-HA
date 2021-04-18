@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Point
+  - Spike
+  - Blade
   layers:
   - Default
   - TransparentFX
