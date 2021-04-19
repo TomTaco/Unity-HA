@@ -477,7 +477,7 @@ MonoBehaviour:
   levelId: 0
   exitSound: {fileID: 8300000, guid: 33bd27af591aa9344a007d6bf8a6fe6e, type: 3}
   levelStartSound: {fileID: 8300000, guid: ee3dcbbd5983a7647ade35b2fc78b810, type: 3}
-  bgMusic: {fileID: 0}
+  bgMusic: {fileID: 1633855775}
   player: {fileID: 793041489}
   maxLevelId: 2
   scoreText: {fileID: 1297579532}
@@ -503,6 +503,18 @@ MonoBehaviour:
       - m_Target: {fileID: 67282535}
         m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
         m_MethodName: ReloadLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 67282535}
+        m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
+        m_MethodName: fadeBgMusic
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -581,6 +593,18 @@ MonoBehaviour:
       - m_Target: {fileID: 67282535}
         m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
         m_MethodName: updateBonkAmountText
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 67282535}
+        m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
+        m_MethodName: fadeBgMusic
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -742,7 +766,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.005, y: 1, z: 1.005}
+  m_Size: {x: 1.4, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &84201126
 GameObject:
@@ -800,7 +824,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.005, y: 1, z: 1.005}
+  m_Size: {x: 1.4, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &85884412
 PrefabInstance:
@@ -1042,7 +1066,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.005, y: 1, z: 1.005}
+  m_Size: {x: 1.4, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &357097907
 PrefabInstance:
@@ -1219,7 +1243,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.005, y: 1, z: 1.005}
+  m_Size: {x: 1.4, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &487869899 stripped
 MonoBehaviour:
@@ -6689,7 +6713,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.005, y: 1, z: 1.005}
+  m_Size: {x: 1.4, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1134369623
 GameObject:
@@ -7191,7 +7215,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.005, y: 1, z: 1.005}
+  m_Size: {x: 1.4, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1631251273
 GameObject:
@@ -7779,7 +7803,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.005, y: 1, z: 1.005}
+  m_Size: {x: 1.4, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1782697707
 PrefabInstance:
@@ -8364,7 +8388,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.005, y: 1, z: 1.005}
+  m_Size: {x: 1.4, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &2114424246
 PrefabInstance:
