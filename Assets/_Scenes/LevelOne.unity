@@ -475,7 +475,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelId: 0
-  exitSound: {fileID: 8300000, guid: 33bd27af591aa9344a007d6bf8a6fe6e, type: 3}
+  exitSound: {fileID: 8300000, guid: d19a133551ba31442ad2179569fdce63, type: 3}
   levelStartSound: {fileID: 8300000, guid: ee3dcbbd5983a7647ade35b2fc78b810, type: 3}
   player: {fileID: 793041489}
   maxLevelId: 2
@@ -7385,7 +7385,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 793041489}
-  timeValue: 11
+  timeValue: 9
   skipText: {fileID: 1794927422}
 --- !u!95 &1633855774
 Animator:
@@ -7836,8 +7836,8 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0.9811321, g: 0.9811321, b: 0.9811321, a: 1}
-  m_Intensity: 1.3
+  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -8593,10 +8593,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1099334373162838396, guid: e3cb6de6e6506fc4b980ebe3f62e0252, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 19.900024
-      objectReference: {fileID: 0}
     - target: {fileID: 6506068997072727205, guid: e3cb6de6e6506fc4b980ebe3f62e0252, type: 3}
       propertyPath: m_Pivot.x
       value: 0
