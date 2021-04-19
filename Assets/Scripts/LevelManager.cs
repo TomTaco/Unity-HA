@@ -5,16 +5,13 @@ using UnityEngine.UI;
 
 public class LevelManager : MonoBehaviour
 {
-    [SerializeField]
-    private int levelId = 0;
-    [SerializeField]
-    private AudioClip exitSound;
-    [SerializeField]
-    private AudioClip levelStartSound;
-    [SerializeField]
-    private GameObject player;
-    [SerializeField]
-    private int maxLevelId = 2;
+
+    [SerializeField] private int levelId = 0;
+    [SerializeField] private AudioClip exitSound;
+    [SerializeField] private AudioClip levelStartSound;
+    [SerializeField] private AudioSource bgMusic;
+    [SerializeField] private GameObject player;
+    [SerializeField] private int maxLevelId = 2;
     private int nextLevelId;
     private int score = 0;
     private int bonks = 0;
@@ -95,6 +92,25 @@ public class LevelManager : MonoBehaviour
         {
             levelEndEvent.Raise();
         }
+    }
+
+    public void fadeBgMusic()
+    {
+        StartCoroutine(StartFade(bgMusic, 2, 0));
+    }
+
+    public static IEnumerator StartFade(AudioSource audioSource, float duration, float targetVolume)
+    {
+        float currentTime = 0;
+        float start = audioSource.volume;
+
+        while (currentTime < duration)
+        {
+            currentTime += Time.deltaTime;
+            audioSource.volume = Mathf.Lerp(start, targetVolume, currentTime / duration);
+            yield return null;
+        }
+        yield break;
     }
 
 }
