@@ -43,6 +43,11 @@ public class LevelManager : MonoBehaviour
         StartCoroutine(waitForLevelExit(2));
     }
 
+    public void LoadMainMenu(){
+        nextLevelId = 0;
+        SceneManager.LoadScene(nextLevelId);
+    }
+
     IEnumerator waitForLevelExit(float sec)
     {
         yield return new WaitForSeconds(sec);
