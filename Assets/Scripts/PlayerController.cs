@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
     public GameEvent levelEndEvent;
     public GameEvent PointCollectEvent;
     private bool alive = true;
+    private bool bitteNichtNochmal = false;
 
     void OnTriggerEnter(Collider other)
     {
@@ -24,6 +25,12 @@ public class PlayerController : MonoBehaviour
         }
         if (other.gameObject.CompareTag("Blade"))
         {
+            AudioSource.PlayClipAtPoint(bladeHitClip, other.transform.position);
+            killPlayer();
+        }
+        if (other.gameObject.CompareTag("Spike") && !bitteNichtNochmal)
+        {
+            bitteNichtNochmal = true;
             AudioSource.PlayClipAtPoint(bladeHitClip, other.transform.position);
             killPlayer();
         }
