@@ -19,9 +19,15 @@ public class CameraController : MonoBehaviour
         anim = GetComponent<Animator>();
         skipText.text = "Press SPACE to SKIP";
         flyingBy = true;
-        animName = anim.GetCurrentAnimatorClipInfo(0)[0].clip.name;
-        animLength = anim.GetCurrentAnimatorStateInfo(0).length;
-        timeValue = animLength;
+        if(anim.isActiveAndEnabled){
+            animName = anim.GetCurrentAnimatorClipInfo(0)[0].clip.name;
+            animLength = anim.GetCurrentAnimatorStateInfo(0).length;
+            timeValue = animLength;
+        }
+        else{
+            flyingBy = false;
+            timeValue = 0;
+        }
     }
 
     // Update is called once per frame
