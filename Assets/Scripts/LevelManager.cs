@@ -33,19 +33,24 @@ public class LevelManager : MonoBehaviour
     {
         /*Scene scene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(scene.name);*/
-        nextLevelId = levelId;
+        nextLevelId = SceneManager.GetActiveScene().buildIndex;
         StartCoroutine(waitForLevelExit(2));
+    }
+
+    public void ReloadLevelInstant(){
+        Scene scene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(scene.name);
     }
 
     public void LoadLevel()
     {
-        nextLevelId = (levelId + 1) % maxLevelId;
+        nextLevelId = (SceneManager.GetActiveScene().buildIndex+1 <= maxLevelId) ? SceneManager.GetActiveScene().buildIndex+1 : 0 ;
         StartCoroutine(waitForLevelExit(2));
     }
 
     public void LoadMainMenu(){
-        nextLevelId = 0;
-        SceneManager.LoadScene(nextLevelId);
+        levelId = 0;
+        SceneManager.LoadScene(levelId);
     }
 
     IEnumerator waitForLevelExit(float sec)
