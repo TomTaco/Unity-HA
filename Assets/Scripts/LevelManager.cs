@@ -11,7 +11,7 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private AudioClip levelStartSound;
     [SerializeField] private AudioSource bgMusic;
     [SerializeField] private GameObject player;
-    [SerializeField] private int maxLevelId = 2;
+    private int maxLevelId = 3;
     private int nextLevelId;
     private int score = 0;
     private int bonks = 0;
@@ -44,11 +44,11 @@ public class LevelManager : MonoBehaviour
 
     public void LoadLevel()
     {
-        nextLevelId = (SceneManager.GetActiveScene().buildIndex+1 <= maxLevelId) ? SceneManager.GetActiveScene().buildIndex+1 : 0 ;
+        nextLevelId = (SceneManager.GetActiveScene().buildIndex+1 <= maxLevelId) ? SceneManager.GetActiveScene().buildIndex+1 : 0; 
         StartCoroutine(waitForLevelExit(2));
     }
 
-    public void LoadMainMenu(){
+        public void LoadMainMenu(){
         nextLevelId = 0;
         StartCoroutine(waitForLevelExit(0));
     }
