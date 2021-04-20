@@ -6,17 +6,22 @@ using UnityEngine.UI;
 public class CameraController : MonoBehaviour
 {
     public GameObject player;
-    public float timeValue;
+    private float timeValue;
     private Vector3 offset;
     private Animator anim;
     public Text skipText;
     private bool flyingBy;
+    private float animLength;
+    private string animName;
     void Start()
     {
         offset = transform.position - player.transform.position;
         anim = GetComponent<Animator>();
         skipText.text = "Press SPACE to SKIP";
         flyingBy = true;
+        animName = anim.GetCurrentAnimatorClipInfo(0)[0].clip.name;
+        animLength = anim.GetCurrentAnimatorStateInfo(0).length;
+        timeValue = animLength;
     }
 
     // Update is called once per frame
@@ -26,7 +31,7 @@ public class CameraController : MonoBehaviour
             timeValue -= Time.deltaTime;
             if(Input.GetKeyDown("space")){
                 anim.speed = 0f;
-                anim.Play("FlyByCam",0,9);
+                anim.Play(animName,0,animLength);
                 timeValue = 0;
                 
             }
