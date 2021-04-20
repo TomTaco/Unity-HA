@@ -263,10 +263,6 @@ PrefabInstance:
       propertyPath: door
       value: 
       objectReference: {fileID: 1779895531}
-    - target: {fileID: 1475511517, guid: 7add7d7f2dfa91b41a8f23b2f4b64a26, type: 3}
-      propertyPath: ButtonPressEvent
-      value: 
-      objectReference: {fileID: 11400000, guid: 098dc4050a8a4dc448ebe25fb26841eb, type: 2}
     - target: {fileID: 1999256124744333332, guid: 7add7d7f2dfa91b41a8f23b2f4b64a26, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -1405,47 +1401,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8714035646607083985, guid: fd4da42b9a584d9458abf8494ed15af9, type: 3}
   m_PrefabInstance: {fileID: 1290602125774792796}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &496430201
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 496430200}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbbc79b7aa0f39249bd549c46b2a232a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  id: 0
---- !u!114 &496430202
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 496430200}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eca8af515c1faaf409afce624c5c66b7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event: {fileID: 11400000, guid: 184a87a08bb88a542b97dfc892f3e72f, type: 2}
-  Response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 496430201}
-        m_TargetAssemblyTypeName: DoorHandler, Assembly-CSharp
-        m_MethodName: openDoor
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!4 &503342132 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5886931991846507403, guid: 30cabc63ee911c24c806879cf8a845c1, type: 3}
@@ -2780,14 +2735,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8142645551246750022, guid: 759e023a9247e404c92edda156f26ddb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8142645551246750041, guid: 759e023a9247e404c92edda156f26ddb, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8142645551246750041, guid: 759e023a9247e404c92edda156f26ddb, type: 3}
-      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8142645551246750042, guid: 759e023a9247e404c92edda156f26ddb, type: 3}
@@ -5166,47 +5113,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8714035646607083985, guid: fd4da42b9a584d9458abf8494ed15af9, type: 3}
   m_PrefabInstance: {fileID: 420116982}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1779895532
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1779895531}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eca8af515c1faaf409afce624c5c66b7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event: {fileID: 11400000, guid: 098dc4050a8a4dc448ebe25fb26841eb, type: 2}
-  Response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1779895533}
-        m_TargetAssemblyTypeName: DoorHandler, Assembly-CSharp
-        m_MethodName: openDoor
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &1779895533
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1779895531}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbbc79b7aa0f39249bd549c46b2a232a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  id: 1
 --- !u!1 &1789452107
 GameObject:
   m_ObjectHideFlags: 0
@@ -5554,173 +5460,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 514146071746737910, guid: a7c92d893ed0ef64faaf9a9678b46194, type: 3}
   m_PrefabInstance: {fileID: 103236792}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream:Assets/_Scenes/Level2.unity
-=======
---- !u!43 &1974491598
-Mesh:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh2529330
-  serializedVersion: 10
-  m_SubMeshes:
-  - serializedVersion: 2
-    firstByte: 0
-    indexCount: 0
-    topology: 0
-    baseVertex: 0
-    firstVertex: 0
-    vertexCount: 0
-    localAABB:
-      m_Center: {x: 0, y: 0, z: 0}
-      m_Extent: {x: 0, y: 0, z: 0}
-  m_Shapes:
-    vertices: []
-    shapes: []
-    channels: []
-    fullWeights: []
-  m_BindPose: []
-  m_BoneNameHashes: 
-  m_RootBoneNameHash: 0
-  m_BonesAABB: []
-  m_VariableBoneCountWeights:
-    m_Data: 
-  m_MeshCompression: 0
-  m_IsReadable: 1
-  m_KeepVertices: 1
-  m_KeepIndices: 1
-  m_IndexFormat: 0
-  m_IndexBuffer: 
-  m_VertexData:
-    serializedVersion: 3
-    m_VertexCount: 0
-    m_Channels:
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 3
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    m_DataSize: 0
-    _typelessdata: 
-  m_CompressedMesh:
-    m_Vertices:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UV:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Normals:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Tangents:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Weights:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_NormalSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_TangentSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_FloatColors:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_BoneIndices:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Triangles:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UVInfo: 0
-  m_LocalAABB:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0, y: 0, z: 0}
-  m_MeshUsageFlags: 0
-  m_BakedConvexCollisionMesh: 
-  m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 1
-  m_MeshOptimizationFlags: 1
-  m_StreamData:
-    serializedVersion: 2
-    offset: 0
-    size: 0
-    path: 
->>>>>>> Stashed changes:Assets/_Scenes/LevelTwo.unity
 --- !u!4 &2038413829 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6015129082237611609, guid: 5486b6b33f71fdf46a52227011381b94, type: 3}
@@ -11022,10 +10761,6 @@ PrefabInstance:
       propertyPath: door
       value: 
       objectReference: {fileID: 496430200}
-    - target: {fileID: 1475511517, guid: 7add7d7f2dfa91b41a8f23b2f4b64a26, type: 3}
-      propertyPath: ButtonPressEvent
-      value: 
-      objectReference: {fileID: 11400000, guid: 184a87a08bb88a542b97dfc892f3e72f, type: 2}
     - target: {fileID: 1999256124744333332, guid: 7add7d7f2dfa91b41a8f23b2f4b64a26, type: 3}
       propertyPath: m_RootOrder
       value: 7
