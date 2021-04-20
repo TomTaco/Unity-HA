@@ -197,9 +197,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2080248116147171972}
+  - component: {fileID: 496549777301776262}
   m_Layer: 0
   m_Name: Spike-Feld
-  m_TagString: Untagged
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -219,6 +220,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &496549777301776262
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2080248116147171973}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0841184, y: 0.31558064, z: 2.7685742}
+  m_Center: {x: 0.005639702, y: 0.21865056, z: -0.0050168037}
 --- !u!1 &2080248116182607194
 GameObject:
   m_ObjectHideFlags: 0
