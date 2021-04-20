@@ -263,6 +263,10 @@ PrefabInstance:
       propertyPath: door
       value: 
       objectReference: {fileID: 1779895531}
+    - target: {fileID: 1475511517, guid: 7add7d7f2dfa91b41a8f23b2f4b64a26, type: 3}
+      propertyPath: OnButton1Press
+      value: 
+      objectReference: {fileID: 11400000, guid: 098dc4050a8a4dc448ebe25fb26841eb, type: 2}
     - target: {fileID: 1999256124744333332, guid: 7add7d7f2dfa91b41a8f23b2f4b64a26, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -1401,6 +1405,47 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8714035646607083985, guid: fd4da42b9a584d9458abf8494ed15af9, type: 3}
   m_PrefabInstance: {fileID: 1290602125774792796}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &496430201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 496430200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8657a417c68fc2419ce11a512311f66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 0
+--- !u!114 &496430202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 496430200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eca8af515c1faaf409afce624c5c66b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: 184a87a08bb88a542b97dfc892f3e72f, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 496430201}
+        m_TargetAssemblyTypeName: DoorHandler, Assembly-CSharp
+        m_MethodName: openDoor
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &503342132 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5886931991846507403, guid: 30cabc63ee911c24c806879cf8a845c1, type: 3}
@@ -5113,6 +5158,47 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8714035646607083985, guid: fd4da42b9a584d9458abf8494ed15af9, type: 3}
   m_PrefabInstance: {fileID: 420116982}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1779895532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1779895531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8657a417c68fc2419ce11a512311f66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 1
+--- !u!114 &1779895533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1779895531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eca8af515c1faaf409afce624c5c66b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: 098dc4050a8a4dc448ebe25fb26841eb, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1779895532}
+        m_TargetAssemblyTypeName: DoorHandler, Assembly-CSharp
+        m_MethodName: openDoor
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1789452107
 GameObject:
   m_ObjectHideFlags: 0
@@ -10761,6 +10847,10 @@ PrefabInstance:
       propertyPath: door
       value: 
       objectReference: {fileID: 496430200}
+    - target: {fileID: 1475511517, guid: 7add7d7f2dfa91b41a8f23b2f4b64a26, type: 3}
+      propertyPath: OnButton1Press
+      value: 
+      objectReference: {fileID: 11400000, guid: 184a87a08bb88a542b97dfc892f3e72f, type: 2}
     - target: {fileID: 1999256124744333332, guid: 7add7d7f2dfa91b41a8f23b2f4b64a26, type: 3}
       propertyPath: m_RootOrder
       value: 7
