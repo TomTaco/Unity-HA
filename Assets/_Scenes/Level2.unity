@@ -3854,7 +3854,7 @@ PrefabInstance:
     - target: {fileID: 7205494295352796348, guid: c52abfa7e8a4f0f4c8ba0fcec91d06c4, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1486046048}
     - target: {fileID: 7205494295352796348, guid: c52abfa7e8a4f0f4c8ba0fcec91d06c4, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ReloadLevelInstant
@@ -3862,7 +3862,7 @@ PrefabInstance:
     - target: {fileID: 8019495023007172680, guid: c52abfa7e8a4f0f4c8ba0fcec91d06c4, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1486046048}
     - target: {fileID: 8019495023007172680, guid: c52abfa7e8a4f0f4c8ba0fcec91d06c4, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: LoadMainMenu
@@ -4120,7 +4120,6 @@ MonoBehaviour:
   levelStartSound: {fileID: 8300000, guid: ee3dcbbd5983a7647ade35b2fc78b810, type: 3}
   bgMusic: {fileID: 1557566216}
   player: {fileID: 2099521932}
-  maxLevelId: 2
   scoreText: {fileID: 138798819}
   allPointsText: {fileID: 62744240}
   bonkAmountText: {fileID: 2050709041}
