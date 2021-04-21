@@ -479,7 +479,6 @@ MonoBehaviour:
   levelStartSound: {fileID: 8300000, guid: ee3dcbbd5983a7647ade35b2fc78b810, type: 3}
   bgMusic: {fileID: 1633855775}
   player: {fileID: 793041489}
-  maxLevelId: 2
   scoreText: {fileID: 1297579532}
   allPointsText: {fileID: 1939182387}
   bonkAmountText: {fileID: 487869899}
@@ -6486,6 +6485,10 @@ PrefabInstance:
       propertyPath: scoreText
       value: 
       objectReference: {fileID: 1297579532}
+    - target: {fileID: 793041496, guid: 759e023a9247e404c92edda156f26ddb, type: 3}
+      propertyPath: pickUpClip
+      value: 
+      objectReference: {fileID: 8300000, guid: aaabe7fc7f695004ba7b6a23ea7f4f2b, type: 3}
     - target: {fileID: 793041496, guid: 759e023a9247e404c92edda156f26ddb, type: 3}
       propertyPath: allPointsText
       value: 
