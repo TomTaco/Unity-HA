@@ -2619,7 +2619,7 @@ PrefabInstance:
     - target: {fileID: 793041496, guid: 759e023a9247e404c92edda156f26ddb, type: 3}
       propertyPath: pickUpClip
       value: 
-      objectReference: {fileID: 8300000, guid: aaabe7fc7f695004ba7b6a23ea7f4f2b, type: 3}
+      objectReference: {fileID: 8300000, guid: 7bf65814721b0bc4bb0849a9fe697828, type: 3}
     - target: {fileID: 793041496, guid: 759e023a9247e404c92edda156f26ddb, type: 3}
       propertyPath: allPointsText
       value: 
